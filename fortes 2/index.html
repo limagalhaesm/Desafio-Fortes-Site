@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes Engenharia</title>
+</head>
+<body>
+    <header>
+        <div class="blue-rectangle">
+            <img src="img/FORTES_LOGOMARCA.png">
+            <button onclick="window.location.href = 'page_1.html'">Gerenciamento de Doações</button>
+            <button onclick="window.location.href = 'page_2.html'">Gerenciamento de Instituições</button>
+            <button onclick="window.location.href = 'page_3.html'">Relatórios</button>
+            <button onclick="window.location.href = 'page_4.html'">Publicar</button>
+            <a href="index_2.html" class="link">Precisa de Ajuda?</a>
+        </div>
+    </header>
+    <div class="login-container">
+        <h2>Login</h2>
+    
+        <form action="/auth" method="post">
+            <div>
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <input type="submit" value="Login">
+            </div>
+        </form>
+    
+        <div class="signup-link">
+            Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a>
+        </div>
+    </div>
+</body>
+</html>
